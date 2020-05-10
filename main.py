@@ -1,4 +1,4 @@
-from Transformation import Transformation
+from transformation import Transformation
 import json
 
 class Engine:

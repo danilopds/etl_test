@@ -1,5 +1,5 @@
-from DataSources import Extract
-from DataLoad import MongoDB
+from extract import Extract
+from load import MongoDB
 import urllib
 import pandas as pd
 import numpy as np
@@ -47,7 +47,7 @@ class Transformation:
         mongoDB_obj = MongoDB(urllib.parse.quote_plus('root'), urllib.parse.quote_plus('password'), 'host', 'GDP')
         # Insert Data into MongoDB
         mongoDB_obj.insert_into_db(gdp_india, 'India_GDP')
-        
+         
     # Pollution Data Transformation
     def apiPollution(self):
         air_data = self.data['results']
