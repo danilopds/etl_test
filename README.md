@@ -11,11 +11,13 @@ Prerequisite for Code:
 ## Notes - Setup test environment #
 
 Refs:
+
 Python ETL Pipeline
-	- https://medium.com/datadriveninvestor/complete-data-analytics-solution-using-etl-pipeline-in-python-edd6580de24b
-	- https://codeburst.io/using-python-script-for-data-etl-53138c567906
+- https://medium.com/datadriveninvestor/complete-data-analytics-solution-using-etl-pipeline-in-python-edd6580de24b
+- https://codeburst.io/using-python-script-for-data-etl-53138c567906
+
 Open API
-	-https://docs.openaq.org/
+- https://docs.openaq.org/
 
 Requiriments:
 - Python + PIP (sudo apt-get install..)
@@ -44,12 +46,15 @@ Funcional rules:
 Project in which we use Pollution data, Economy data and Cryptocurrency data. Let’s assume that we want to do some data analysis on these data sets and then load it into MongoDB database for critical business decision making or whatsoever.
 
 Data sources:
-API : These API’s will return data in JSON format.
-	- Pollution Data: 	"https://api.openaq.org/v1/latest?country=IN&limit=10000" .
-	- Economy Data: 	"https://api.data.gov.in/resource/07d49df4-233f-4898-92db-e6855d4dd94c?api-key=579b464db66ec23bdd000001cdd3946e44ce4aad7209ff7b23ac571b&format=json&offset=0&limit=100"
-CSV Data
-	- Crypto Currencies: "https://raw.githubusercontent.com/diljeet1994/Python_Tutorials/master/Projects/Advanced%20ETL/crypto-markets.csv"
 
+API : These API’s will return data in JSON format.
+- Pollution Data: 	"https://api.openaq.org/v1/latest?country=IN&limit=10000" .
+- Economy Data: 	"https://api.data.gov.in/resource/07d49df4-233f-4898-92db-e6855d4dd94c?api-key=579b464db66ec23bdd000001cdd3946e44ce4aad7209ff7b23ac571b&format=json&offset=0&limit=100"
+
+CSV Data
+- Crypto Currencies: "https://raw.githubusercontent.com/diljeet1994/Python_Tutorials/master/Projects/Advanced%20ETL/crypto-markets.csv"
+
+Steps:
 1. Create requirements file
 	sudo pip install pymongo
 	sudo pip install requests
